@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Your Shop – Showroom Ảo</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    .product { max-width: 300px; margin-bottom: 20px; }
+    .product img { width:100%; }
+    button { background: #0084ff; color: #fff; border: none; padding: 10px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Your Shop</h1>
+
+  <!-- Ví dụ 1 sản phẩm -->
+  <div class="product">
+    <img src="https://link-to-your-image.jpg" alt="Tên sản phẩm">
+    <h2>Tên sản phẩm</h2>
+    <p>Giá: 500.000₫</p>
+    <button onclick="window.open('https://m.me/637930122727919','_blank')">
+      Chat với chúng tôi
+    </button>
+  </div>
+
+  <!-- Nơi chèn Facebook Customer Chat Plugin -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js"></script>
+  <div class="fb-customerchat"
+    attribution=setup_tool
+    page_id="YourPageID"
+    theme_color="#0084ff"
+    logged_in_greeting="Chào bạn! Bạn cần tư vấn gì?"
+    logged_out_greeting="Chào bạn! Vui lòng đăng nhập để chat nhé.">
+  </div>
+</body>
+</html>
